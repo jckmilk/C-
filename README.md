@@ -17,7 +17,9 @@ protected:
 ```
 
 ## 简单对象模型
+![简单对象模型](https://raw.githubusercontent.com/jckmilk/C-object-model/master/%E7%AE%80%E5%8D%95%E6%A8%A1%E5%9E%8B.jpg)
 在这个简单的模型中，**一个object是一系列的slots，每一个slot指向一个members。Members按其生命次序**。各被指定一个slots。每一个data或function都有自己的一个slot。在这个简单的模型中，members并不放在objects中，只有指向member的指针才放在object中。
 ## 表格驱动对象模型
+![member function 模型]
 为了对所有的class的所有的objects都有一致的表达式，另一种对象模型是把所有与members相关的信息抽出来，放在一个data member table和一个member function talble之中。class object本身则内涵指向这两个表格的指针。member function table是一系列的slots 每一个slot指出一个member function；
 data member table则直接含有data本身。
